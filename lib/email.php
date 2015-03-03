@@ -7,6 +7,26 @@ $message = filter_input(INPUT_POST, "message", FILTER_SANITIZE_STRING);
 $name    = filter_input(INPUT_POST, "name", FILTER_SANITIZE_STRING);
 $subject = filter_input(INPUT_POST, "subject", FILTER_SANITIZE_STRING);
 
+if(@empty($email) === true) {
+	echo "<div class=\"alert alert-danger\" role=\"alert\"><strong>Oh snap!</strong> Email address is missing. Re-enter the Email and try again.</div>";
+	exit;
+}
+
+if(@empty($message) === true) {
+	echo "<div class=\"alert alert-danger\" role=\"alert\"><strong>Oh snap!</strong> Message is missing. Re-enter the message and try again.</div>";
+	exit;
+}
+
+if(empty($name) === true) {
+	echo "<div class=\"alert alert-danger\" role=\"alert\"><strong>Oh snap!</strong> Name is missing. Re-enter the name and try again.</div>";
+	exit;
+}
+
+if(@empty($subject) === true) {
+	echo "<div class=\"alert alert-danger\" role=\"alert\"><strong>Oh snap!</strong> Subject is missing. Re-enter the subject and try again.</div>";
+	exit;
+}
+
 if(verifyCaptcha($_POST["recaptcha_challenge_field"], $_POST["recaptcha_response_field"]) === false)
 {
 	echo "<div class=\"alert alert-danger\" role=\"alert\"><strong>Oh snap!</strong> Wrong captcha. Verify the captcha and try again.</div>";
@@ -18,7 +38,7 @@ $message = str_replace("\r", "", $message);
 $message = str_replace("\n", "<br />", $message);
 
 /* set static variables */
-$destinationEmail = "sim@vsfs.org";
+$destinationEmail = "dylan@deepdivedylan.com";
 $from			 = "$name <$email>";
 $dateTime		 = new DateTime();
 

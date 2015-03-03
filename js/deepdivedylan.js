@@ -48,7 +48,7 @@ $(document).ready(function()
 
 					if($(".alert-success").length >= 1)
 					{
-						$(form).reset();
+						$(form)[0].reset();
 					}
 				}
 			});
