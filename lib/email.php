@@ -2,10 +2,10 @@
 require_once("common.php");
 require_once("Mail.php");
 
-$email   = scrubStringInput($_POST["email"]);
-$message = scrubStringInput($_POST["message"]);
-$name	= scrubStringInput($_POST["name"]);
-$subject = scrubStringInput($_POST["subject"]);
+$email   = filter_input(INPUT_POST, "email", FILTER_SANITIZE_EMAIL);
+$message = filter_input(INPUT_POST, "message", FILTER_SANITIZE_STRING);
+$name    = filter_input(INPUT_POST, "name", FILTER_SANITIZE_STRING);
+$subject = filter_input(INPUT_POST, "subject", FILTER_SANITIZE_STRING);
 
 if(verifyCaptcha($_POST["recaptcha_challenge_field"], $_POST["recaptcha_response_field"]) === false)
 {

@@ -18,12 +18,6 @@ function highlightNav($header)
 	return($header);
 }
 
-function scrubStringInput($input)
-{
-	$scrubbed = htmlspecialchars(trim($input));
-	return($scrubbed);
-}
-
 function sendIEHeader()
 {
 	if(isset($_SERVER['HTTP_USER_AGENT']) &&
