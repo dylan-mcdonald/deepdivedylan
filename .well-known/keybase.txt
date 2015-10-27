@@ -1,0 +1,79 @@
+==================================================================
+https://keybase.io/deepdivedylan
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://www.deepdivedylan.com
+  * I am deepdivedylan (https://keybase.io/deepdivedylan) on keybase.
+  * I have a public key with fingerprint D955 A732 75E1 D911 EE53  BE95 B677 9DD0 3D09 4D24
+
+To do so, I am signing this object:
+
+{
+    "body": {
+        "key": {
+            "eldest_kid": "01010fd4b0b5e04fbccc7910f52f744aef7ec2299ae406f08d479625bc2dfa783e700a",
+            "fingerprint": "d955a73275e1d911ee53be95b6779dd03d094d24",
+            "host": "keybase.io",
+            "key_id": "b6779dd03d094d24",
+            "kid": "01010fd4b0b5e04fbccc7910f52f744aef7ec2299ae406f08d479625bc2dfa783e700a",
+            "uid": "0267585cb92b901ac7c131d242e54319",
+            "username": "deepdivedylan"
+        },
+        "revoke": {
+            "sig_ids": [
+                "a6da0f2057ed0a17d45b6e6f0a293a87b6aa32abf6d30f1f88d95678cb0c9b440f"
+            ]
+        },
+        "service": {
+            "hostname": "www.deepdivedylan.com",
+            "protocol": "https:"
+        },
+        "type": "web_service_binding",
+        "version": 1
+    },
+    "ctime": 1445917563,
+    "expire_in": 157680000,
+    "prev": "bc5aafbbee231ee9476ead09e5f8529deded874753155f6ac50cf5370fc553fa",
+    "seqno": 6,
+    "tag": "signature"
+}
+
+which yields the signature:
+
+-----BEGIN PGP MESSAGE-----
+Version: GnuPG v1
+
+owGtkm1QVFUYx3eXt4FoQIYSTKGulsyA630799y76EAwvDkYyqQBmst9ORcu4N51
+d+VFYqaCgCiQAYVSkRojm4YoAjGSAAOkwgYHYciXyppkShQi8KU+WGfJPjTTx+75
+cOec+T//53ee/6l/2MNgMvYUtVzY7Lt1nXHsF8mw07zYVUpIulJCWEqJfLT8QwUK
+crqs+ZpCWAiSwktVWImUACJZVZJlGQr4CNAqZFkRqRDJNC0IImJJTiV5hYUCRwNJ
+phVVhDyDIEmKRBSharYc5LA7NJsL2yoCACJkaAgQpQgUhRBgJCQAiYNQUBSSUUiB
+VWgWF+bqTncFhpNEJzJrOj7DG+sy3n/o/2fu/X/b0RwEPJAlgZYEkhJlKFMMhRvS
+CLAMJbiFTuSwiXuR+3YI2RWtECklBaKNKIsiHKhQz0fu4Tq1HEzuJCy7CJFTRFKl
+SQCRQooUVFh8fYRZRFpgRB5KnCgytCipnMKQKqXyPJ4aB3lZImVBYllSJZ7H3rht
+oSYvm7tH9QChqKjI/C8Ms6zvxZR2h+7SZb0AS3IHTS6X3WlxA7pK7MtVSLI+8LNK
+mk3BmeGaQuRwarqNsFBYKbs0dwOKZYFAQcAxUQQqtmsOZNXcCgA5nsSfuxMqdCck
+A1FUJQkhmsExCyzkkIjTQkDlAS0oCC8eshAwFAAqJ8qAlFXAQFKVAWBUdwROtM+m
+ExYOY4o52BLP0Ca69jsQUeb3qmm1p8FoMnh7mdyP2eDnG/jPC49MDTQcP1cTsKRW
+3JpMmMhu3PPpT1VDmy8/ElcX9FpHZdJETM9gfkd59v00X0+S5x8Tvv1BGmo4/3vp
+kfQcj1MDKYcMX2x7a+3u8+cG5rbO398nf1xRQ7ba7jVN3H5/A/FE/4S54Ot3k34M
+KaovL959NWEx+Objg1/Nt0T47+g9GZs0mVsbI0yYY7/5zv/pptQzB0/8wcH0Ox5n
+Urf4B19aEzlpb25PyLo+x288leL1Xstw7dzOFeb6Uf2i5fZLq6Krr3U39Y20ekYf
+bxoN/WjVWPLKMmv61OF+H0dzWlzfG6UV40vbucbwaxEBbXM9ySc+u2IY+Lm6rjtz
+6dG1iZrvdR9oOVy1/m5nafj0No+j8ki8HC+/cuypzxdDvp8vi2iISFmInrmj3Iy/
+IG/MaF0ftlhd2felqa2tJZCYXFoEtb41Und8cPjZlJS0Lj5o/Mjrx/QO4/0bw5+4
+Ml+0BZ1MDPGezDXtuLGh64VNv0ZmZgy9PZW4ZXykl8iqza5v1Vyrzyb6zBUl85yl
+Uh/21hvRzT/zDsSRu2YDQltOx5wIe67NbmFTDdNeYwv2lZc732lwHXpzfl1oePEH
+fWg6ayr43pW8mWfmg6o+jDramZlzOm7PmoUdflcDyySbxX+2v1Mw5M1cis0erXuy
+rrznVmfYXaPVUf5sdXx7jfGitX9Fb8h2eDDjtwObHnq5edbY/hc=
+=itml
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/deepdivedylan
+
+==================================================================
