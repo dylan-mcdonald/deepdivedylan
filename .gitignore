@@ -1,3 +1,11 @@
-.idea
 .DS_Store
-google*.html
+/.sync-config.cson
+/.idea
+/node_modules
+/typings
+/public_html/app/**/*.js
+/public_html/app/**/*.js.map
+/public_html/dist
+/public_html/index.php
+/public_html/google*.html
+/npm-debug.log
