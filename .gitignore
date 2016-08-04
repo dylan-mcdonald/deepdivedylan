@@ -3,8 +3,8 @@
 /.idea
 /node_modules
 /typings
-/public_html/app/**/*.js
-/public_html/app/**/*.js.map
+/app/**/*.js
+/app/**/*.js.map
 /public_html/dist
 /public_html/index.php
 /public_html/google*.html
