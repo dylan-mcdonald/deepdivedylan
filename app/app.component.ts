@@ -4,7 +4,7 @@ import {HTTP_PROVIDERS} from "@angular/http";
 
 @Component({
 	selector: 'deepdivedylan-app',
-	templateUrl: './app/templates/deepdivedylan-app.html',
+	templateUrl: './templates/deepdivedylan-app.html',
 	directives: [ROUTER_DIRECTIVES],
 	providers: [HTTP_PROVIDERS]
 })
