@@ -1,1 +1,32 @@
-<router-outlet></router-outlet>
+<div class="sfooter-content">
+	<header id="top">
+		<nav class="navbar navbar-fixed-top">
+			<div class="container">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapsed">
+						<span class="sr-only">Main Menu</span>
+						<i class="fa fa-bars fa-lg"></i>
+					</button>
+					<a class="navbar-brand" routerLink="/">Deep Dive Dylan</a>
+				</div>
+				<div class="collapse navbar-collapse" id="navbar-collapsed">
+					<ul class="nav navbar-nav navbar-right">
+						<li><a routerLink="/"><i class="fa fa-home fa-lg"></i></a></li>
+						<li><a routerLink="/advocacy">Advocacy</a></li>
+						<li><a routerLink="/teaching">Teaching</a></li>
+						<li><a routerLink="/coding">Coding</a></li>
+						<li><a routerLink="/contact">Contact</a></li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+	</header>
+	<main class="container">
+		<router-outlet></router-outlet>
+	</main>
+</div>
+<footer class="footer">
+	<div class="container">
+		This is a footer
+	</div>
+</footer>
