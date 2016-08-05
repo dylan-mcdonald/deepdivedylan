@@ -11,7 +11,7 @@
 
 		<title>Deep Dive Dylan</title>
 	</head>
-	<body class="sfooter">
+	<body>
 		<deepdivedylan-app>Loading&hellip;</deepdivedylan-app>
 	</body>
 </html>

@@ -1,32 +1,34 @@
-<div class="sfooter-content">
-	<header id="top">
-		<nav class="navbar navbar-fixed-top">
-			<div class="container">
-				<div class="navbar-header">
-					<button type="button" class="navbar-toggle collapsed" aria-expanded="false" (click)="toggleCollapse();">
-						<span class="sr-only">Main Menu</span>
-						<i class="fa fa-bars fa-lg"></i>
-					</button>
-					<a class="navbar-brand" routerLink="/">Deep Dive Dylan</a>
+<div class="sfooter">
+	<div class="sfooter-content">
+		<header id="top">
+			<nav class="navbar navbar-fixed-top">
+				<div class="container">
+					<div class="navbar-header">
+						<button type="button" class="navbar-toggle collapsed" aria-expanded="false" (click)="toggleCollapse();">
+							<span class="sr-only">Main Menu</span>
+							<i class="fa fa-bars fa-lg"></i>
+						</button>
+						<a class="navbar-brand" routerLink="/">Deep Dive Dylan</a>
+					</div>
+					<div class="navbar-collapse" [ngClass]="{collapse: navCollapse}">
+						<ul class="nav navbar-nav navbar-right" (click)="toggleCollapse();">
+							<li><a routerLink="/"><i class="fa fa-home fa-lg"></i></a></li>
+							<li><a routerLink="/advocacy">Advocacy</a></li>
+							<li><a routerLink="/teaching">Teaching</a></li>
+							<li><a routerLink="/coding">Coding</a></li>
+							<li><a routerLink="/contact">Contact</a></li>
+						</ul>
+					</div>
 				</div>
-				<div class="navbar-collapse" [ngClass]="{collapse: navCollapse}">
-					<ul class="nav navbar-nav navbar-right" (click)="toggleCollapse();">
-						<li><a routerLink="/"><i class="fa fa-home fa-lg"></i></a></li>
-						<li><a routerLink="/advocacy">Advocacy</a></li>
-						<li><a routerLink="/teaching">Teaching</a></li>
-						<li><a routerLink="/coding">Coding</a></li>
-						<li><a routerLink="/contact">Contact</a></li>
-					</ul>
-				</div>
-			</div>
-		</nav>
-	</header>
-	<main class="container">
-		<router-outlet></router-outlet>
-	</main>
-</div>
-<footer class="footer">
-	<div class="container">
-		This is a footer
+			</nav>
+		</header>
+		<main class="container">
+			<router-outlet></router-outlet>
+		</main>
 	</div>
-</footer>
+	<footer class="footer">
+		<div class="container">
+			This is a footer
+		</div>
+	</footer>
+</div>
