@@ -28,7 +28,7 @@ body {
 
 main:before {
 	background-attachment: fixed !important;
-	background: url("../img/diamonds.png") repeat;
+	background: url("/images/diamonds.png") repeat;
 	content: '';
 	display: block;
 	height: 100%;
