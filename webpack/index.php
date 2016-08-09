@@ -1,3 +1,10 @@
+<?php
+require_once("lib/xsrf.php");
+if(session_status() !== PHP_SESSION_ACTIVE) {
+	session_start();
+}
+setXsrfCookie();
+?>
 <!DOCTYPE html>
 <html>
 	<head>
