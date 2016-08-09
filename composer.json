@@ -1,0 +1,6 @@
+{
+	"require": {
+		"guzzlehttp/psr7": "@stable",
+		"mailgun/mailgun-php": "@stable"
+	}
+}
