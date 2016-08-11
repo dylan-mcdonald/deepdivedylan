@@ -5,6 +5,7 @@ import {CodingComponent} from "./components/coding-component";
 import {SplashComponent} from "./components/splash-component";
 import {TeachingComponent} from "./components/teaching-component";
 
+
 export const allAppComponents = [AdvocacyComponent, ContactComponent, CodingComponent, SplashComponent, TeachingComponent];
 
 export const routes: Routes = [

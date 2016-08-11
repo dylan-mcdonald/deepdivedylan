@@ -4,7 +4,6 @@ import {MailResponse} from "../classes/mail-response";
 import {MailService} from "../services/mail-service";
 
 @Component({
-	providers: [MailService],
 	templateUrl: "./templates/contact.html"
 })
 
