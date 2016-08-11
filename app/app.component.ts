@@ -1,13 +1,8 @@
-import {Component} from "@angular/core"
-import {NgClass} from "@angular/common";
-import {ROUTER_DIRECTIVES} from "@angular/router";
-import {HTTP_PROVIDERS} from "@angular/http";
+import {Component} from "@angular/core";
 
 @Component({
 	selector: 'deepdivedylan-app',
-	templateUrl: './templates/deepdivedylan-app.html',
-	directives: [NgClass, ROUTER_DIRECTIVES],
-	providers: [HTTP_PROVIDERS]
+	templateUrl: './templates/deepdivedylan-app.html'
 })
 
 export class AppComponent {
