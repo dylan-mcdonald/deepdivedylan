@@ -1,4 +1,4 @@
-import {RouterModule, Routes, ROUTER_DIRECTIVES} from "@angular/router";
+import {RouterModule, Routes} from "@angular/router";
 import {AdvocacyComponent} from "./components/advocacy-component";
 import {ContactComponent} from "./components/contact-component";
 import {CodingComponent} from "./components/coding-component";
