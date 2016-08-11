@@ -10,13 +10,25 @@ import {MailService} from "../services/mail-service";
 export class ContactComponent {
 	constructor(private mailService: MailService) {}
 
+	alertClass: string = "";
 	mailMessage: MailMessage = new MailMessage("", "", "", "");
 	mailResponse: MailResponse = null;
 
 	sendMail(mailMessage: MailMessage) {
 		this.mailService.sendMail(mailMessage)
 			.subscribe(
-				mailResponse => this.mailResponse = mailResponse
+				mailResponse => {
+					this.mailResponse = mailResponse
+					this.alertClass = this.setAlertClass()
+				}
 			);
+	}
+
+	setAlertClass() {
+		if(this.mailResponse.status !== 200) {
+			return("alert-danger");
+		} else {
+			return("alert-success");
+		}
 	}
 }

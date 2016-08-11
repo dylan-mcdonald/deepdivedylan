@@ -67,7 +67,7 @@ try {
 		if($result->http_response_code !== 200) {
 			throw(new RuntimeException("unable to send email", $result->http_response_code));
 		}
-		$result->message = "Thank you for reaching out. I'll be in contact shortly!";
+		$reply->message = "Thank you for reaching out. I'll be in contact shortly!";
 	}  else {
 		throw(new InvalidArgumentException("Invalid HTTP method request", 405));
 	}
