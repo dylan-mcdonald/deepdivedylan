@@ -10,6 +10,7 @@ import {MailService} from "../services/mail-service";
 export class ContactComponent {
 	constructor(private mailService: MailService) {}
 
+	mailMessage: MailMessage = new MailMessage("", "", "", "");
 	mailResponse: MailResponse = null;
 
 	sendMail(mailMessage: MailMessage) {

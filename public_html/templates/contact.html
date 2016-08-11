@@ -7,7 +7,7 @@
 			<div class="input-group-addon">
 				<i class="fa fa-user" aria-hidden="true"></i>
 			</div>
-			<input type="text" class="form-control" id="name" name="name" placeholder="Whom shall I say is calling?">
+			<input type="text" class="form-control" id="name" name="name" placeholder="Whom shall I say is calling?" required [(ngModel)]="mailMessage.name">
 		</div>
 	</div>
 	<div class="form-group">
@@ -16,7 +16,7 @@
 			<div class="input-group-addon">
 				<i class="fa fa-envelope" aria-hidden="true"></i>
 			</div>
-			<input type="email" class="form-control" id="email" name="email" placeholder="How may I reach you?">
+			<input type="email" class="form-control" id="email" name="email" placeholder="How may I reach you?" required [(ngModel)]="mailMessage.email">
 		</div>
 	</div>
 	<div class="form-group">
@@ -25,12 +25,12 @@
 			<div class="input-group-addon">
 				<i class="fa fa-pencil" aria-hidden="true"></i>
 			</div>
-			<input type="text" class="form-control" id="subject" name="subject" placeholder="What's this about?">
+			<input type="text" class="form-control" id="subject" name="subject" placeholder="What's this about?" required [(ngModel)]="mailMessage.subject">
 		</div>
 	</div>
 	<div class="form-group">
 		<label for="message">Message</label>
-		<textarea name="message" id="message" cols="30" rows="10" class="form-control" placeholder="What's on your mind?"></textarea>
+		<textarea name="message" id="message" cols="30" rows="10" class="form-control" placeholder="What's on your mind?" [(ngModel)]="mailMessage.message"></textarea>
 	</div>
 	<div class="form-group">
 		<button type="submit" class="btn btn-lg btn-primary"><i class="fa fa-lg fa-paper-plane-o" aria-hidden="true"></i> Send</button>
