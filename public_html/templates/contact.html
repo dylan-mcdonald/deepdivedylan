@@ -1,53 +1,55 @@
-<h1>Contact</h1>
+<section>
+	<h1>Contact</h1>
 
-<form class="form-horizontal" (ngSubmit)="sendMail(mailMessage);" #contactForm="ngForm">
-	<div class="form-group">
-		<label for="name">Name</label>
-		<div class="input-group">
-			<div class="input-group-addon">
-				<i class="fa fa-user" aria-hidden="true"></i>
+	<form class="form-horizontal" (ngSubmit)="sendMail(mailMessage);" #contactForm="ngForm">
+		<div class="form-group">
+			<label for="name">Name</label>
+			<div class="input-group">
+				<div class="input-group-addon">
+					<i class="fa fa-user" aria-hidden="true"></i>
+				</div>
+				<input type="text" class="form-control" id="name" name="name" placeholder="Whom shall I say is calling?" required [(ngModel)]="mailMessage.name" #name="ngModel">
 			</div>
-			<input type="text" class="form-control" id="name" name="name" placeholder="Whom shall I say is calling?" required [(ngModel)]="mailMessage.name" #name="ngModel">
-		</div>
-		<div [hidden]="name.valid || name.pristine" class="alert alert-danger">
-			Name is required
-		</div>
-	</div>
-	<div class="form-group">
-		<label for="email">Email</label>
-		<div class="input-group">
-			<div class="input-group-addon">
-				<i class="fa fa-envelope" aria-hidden="true"></i>
+			<div [hidden]="name.valid || name.pristine" class="alert alert-danger">
+				Name is required
 			</div>
-			<input type="email" class="form-control" id="email" name="email" placeholder="How may I reach you?" required [(ngModel)]="mailMessage.email" #email="ngModel">
 		</div>
-		<div [hidden]="email.valid || email.pristine" class="alert alert-danger">
-			Email is required
-		</div>
-	</div>
-	<div class="form-group">
-		<label for="subject">Subject</label>
-		<div class="input-group">
-			<div class="input-group-addon">
-				<i class="fa fa-pencil" aria-hidden="true"></i>
+		<div class="form-group">
+			<label for="email">Email</label>
+			<div class="input-group">
+				<div class="input-group-addon">
+					<i class="fa fa-envelope" aria-hidden="true"></i>
+				</div>
+				<input type="email" class="form-control" id="email" name="email" placeholder="How may I reach you?" required [(ngModel)]="mailMessage.email" #email="ngModel">
 			</div>
-			<input type="text" class="form-control" id="subject" name="subject" placeholder="What's this about?" required [(ngModel)]="mailMessage.subject" #subject="ngModel">
+			<div [hidden]="email.valid || email.pristine" class="alert alert-danger">
+				Email is required
+			</div>
 		</div>
-		<div [hidden]="subject.valid || subject.pristine" class="alert alert-danger">
-			Subject is required
+		<div class="form-group">
+			<label for="subject">Subject</label>
+			<div class="input-group">
+				<div class="input-group-addon">
+					<i class="fa fa-pencil" aria-hidden="true"></i>
+				</div>
+				<input type="text" class="form-control" id="subject" name="subject" placeholder="What's this about?" required [(ngModel)]="mailMessage.subject" #subject="ngModel">
+			</div>
+			<div [hidden]="subject.valid || subject.pristine" class="alert alert-danger">
+				Subject is required
+			</div>
 		</div>
-	</div>
-	<div class="form-group">
-		<label for="message">Message</label>
-		<textarea name="message" id="message" cols="30" rows="10" class="form-control" placeholder="What's on your mind?" [(ngModel)]="mailMessage.message"></textarea>
-	</div>
-	<div class="form-group">
-		<button type="submit" class="btn btn-lg btn-primary" [disabled]="!contactForm.form.valid"><i class="fa fa-lg fa-paper-plane-o" aria-hidden="true"></i> Send</button>
-		<button type="reset" class="btn btn-lg btn-default">Clear</button>
-	</div>
-</form>
+		<div class="form-group">
+			<label for="message">Message</label>
+			<textarea name="message" id="message" cols="30" rows="10" class="form-control" placeholder="What's on your mind?" [(ngModel)]="mailMessage.message"></textarea>
+		</div>
+		<div class="form-group">
+			<button type="submit" class="btn btn-lg btn-primary" [disabled]="!contactForm.form.valid"><i class="fa fa-lg fa-paper-plane-o" aria-hidden="true"></i> Send</button>
+			<button type="reset" class="btn btn-lg btn-default">Clear</button>
+		</div>
+	</form>
 
-<div *ngIf="mailResponse !== null" class="alert alert-dismissible" [ngClass]="alertClass" role="alert">
-	<button type="button" class="close" aria-label="Close" (click)="mailResponse = null;"><span aria-hidden="true">&times;</span></button>
-	{{ mailResponse.message }}
-</div>
+	<div *ngIf="mailResponse !== null" class="alert alert-dismissible" [ngClass]="alertClass" role="alert">
+		<button type="button" class="close" aria-label="Close" (click)="mailResponse = null;"><span aria-hidden="true">&times;</span></button>
+		{{ mailResponse.message }}
+	</div>
+</section>

@@ -44,19 +44,6 @@ section {
 	padding: 25px 0;
 }
 
-section#teaching {
-	background: #fff;
-	background: -moz-linear-gradient(left,  rgba(255,255,255,0) 0%, rgba(255,255,255,1) 50%, rgba(255,255,255,0) 100%);
-	background: -webkit-linear-gradient(left,  rgba(255,255,255,0) 0%,rgba(255,255,255,1) 50%,rgba(255,255,255,0) 100%);
-	background: linear-gradient(to right,  rgba(255,255,255,0) 0%,rgba(255,255,255,1) 50%,rgba(255,255,255,0) 100%);
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#00ffffff',GradientType=1 );
-}
-
-section#advocacy {
-	color: #a6dbd7;
-	background-color: #000;
-}
-
 footer.footer {
 	padding: 10px 0;
 	color: #555;
@@ -90,14 +77,6 @@ footer.footer {
 	section#welcome {
 		min-height: 650px;
 		padding-top: 200px;
-	}
-
-	section#teaching {
-		padding: 50px 0 100px 0;
-	}
-
-	#about {
-		padding-top: 50px;
 	}
 }
 
