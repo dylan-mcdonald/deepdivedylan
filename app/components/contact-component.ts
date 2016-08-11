@@ -19,15 +19,16 @@ export class ContactComponent {
 			.subscribe(
 				mailResponse => {
 					this.mailResponse = mailResponse
-					this.alertClass = this.setAlertClass()
+					this.alertClass = this.resetFormOnSuccess()
 				}
 			);
 	}
 
-	setAlertClass() {
+	resetFormOnSuccess() {
 		if(this.mailResponse.status !== 200) {
 			return("alert-danger");
 		} else {
+			this.mailMessage = new MailMessage("", "", "", "");
 			return("alert-success");
 		}
 	}
