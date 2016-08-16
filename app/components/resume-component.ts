@@ -21,4 +21,13 @@ export class ResumeComponent implements OnInit {
 				resumeData => this.resumeData = resumeData
 			);
 	}
+
+	formatPhone(phone: string) {
+		if(phone === undefined) {
+			return;
+		}
+
+		let regex = /[^0-9\+]/g;
+		return("tel:" + phone.replace(regex, ""));
+	}
 }
