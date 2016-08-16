@@ -1,0 +1,77 @@
+<section *ngIf="resumeData !== null">
+	<div class="row">
+		<div class="col-md-9">
+			<h1>{{ resumeData.firstname }} {{ resumeData.familyname }}</h1>
+			<p>
+				<span *ngFor="let star of resumeData.bio_data.stars; let last = last">
+					{{ star }} <i *ngIf="last === false" class="fa fa-star" aria-hidden="true"></i>
+				</span>
+			</p>
+		</div>
+		<div class="col-md-3">
+			<ul class="fa-ul">
+				<li><i class="fa fa-li fa-envelope" aria-hidden="true"></i> <a [href]="'mailto:' + resumeData.bio_data.email">{{ resumeData.bio_data.email }}</a></li>
+				<li><i class="fa fa-li fa-globe" aria-hidden="true"></i> <a [href]="resumeData.bio_data.website">{{ resumeData.bio_data.website }}</a></li>
+				<li><i class="fa fa-li fa-phone" aria-hidden="true"></i> <a [href]="formatPhone(resumeData.bio_data.phone)">{{ resumeData.bio_data.phone }}</a></li>
+				<li><i class="fa fa-li fa-linkedin-square" aria-hidden="true"></i> <a [href]="'https://www.linkedin.com/in/' + resumeData.linkedin_id">/in/{{ resumeData.linkedin_id }}</a></li>
+				<li><i class="fa fa-li fa-twitter" aria-hidden="true"></i> <a [href]="'https://twitter.com/' + resumeData.twitter_id">{{ resumeData.linkedin_id }}</a></li>
+				<li><i class="fa fa-li fa-github" aria-hidden="true"></i> <a [href]="'https://github.com/' + resumeData.github_id">{{ resumeData.github_id }}</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class="row">
+		<h2><i class="fa fa-user" aria-hidden="false"></i> Qualifications Summary</h2>
+		<ul>
+			<li *ngFor="let qualification of resumeData.bio_data.summary.points">{{ qualification }}</li>
+		</ul>
+	</div>
+	<div class="row">
+		<h2><i class="fa fa-code" aria-hidden="true"></i> Technical Skills</h2>
+		<ul>
+			<li *ngFor="let detail of resumeData.skills.details">
+				{{ detail.type }}:
+				<span *ngFor="let item of detail.items"> <span class="label label-default">{{ item.name }}</span></span>
+			</li>
+		</ul>
+	</div>
+	<div class="row">
+		<h2><i class="fa fa-graduation-cap" aria-hidden="true"> Education</i></h2>
+		<table class="table table-hover table-responsive">
+			<tr><th>Degree</th><th>Major</th><th>Institution</th><th>Graduation Year</th></tr>
+			<tr *ngFor="let school of resumeData.education.schools">
+				<td>{{ school.degree }}</td>
+				<td>{{ school.major }}</td>
+				<td>{{ school.institution }}</td>
+				<td>{{ school.graduation_year }}</td>
+			</tr>
+		</table>
+	</div>
+	<div class="row">
+		<h2><i class="fa fa-briefcase" aria-hidden="true"></i> Professional Experience</h2>
+	</div>
+	<div *ngFor="let item of resumeData.experience.items" class="row">
+		<h4>
+			<em>{{ item.title }}</em>, {{ item.organisation }}, {{ item.location }}
+			<span class="pull-right">{{ item.from }} - {{ item.to }}</span>
+		</h4>
+		<ul>
+			<li *ngFor="let detail of item.details">{{ detail }}</li>
+			<li>
+				Technologies used:
+				<span *ngFor="let tool of item.technology_used.tools"> <span class="label label-default">{{ tool.name }}</span></span>
+			</li>
+		</ul>
+	</div>
+	<div class="row">
+		<h2><i class="fa fa-pencil-square-o" aria-hidden="true"></i> Research Experience</h2>
+	</div>
+	<div *ngFor="let item of resumeData.research_experience.items" class="row">
+		<h4>
+			<em>{{ item.title }}</em>, {{ item.organisation }}
+			<span class="pull-right">{{ item.from }} - {{ item.to }}</span>
+		</h4>
+		<ul>
+			<li *ngFor="let point of item.points">{{ point }}</li>
+		</ul>
+	</div>
+</section>
