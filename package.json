@@ -13,7 +13,7 @@
 	},
 	"repository": {
 		"type": "git",
-		"url": "https://github.com/dylan-mcdonald/bacon-ipsum-angular2.git"
+		"url": "https://github.com/dylan-mcdonald/deepdivedylan.git"
 	},
 	"devDependencies": {
 		"@angular/common": "2.0.0-rc.5",
