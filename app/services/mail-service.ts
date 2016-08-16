@@ -1,12 +1,15 @@
 import {Injectable} from "@angular/core";
 import {Headers, Http, Response, RequestOptions} from "@angular/http";
 import {Observable} from "rxjs/Observable";
+import {BaseService} from "./base-service";
 import {MailMessage} from "../classes/mail-message";
 import {MailResponse} from "../classes/mail-response";
 
 @Injectable()
-export class MailService {
-	constructor(private http: Http) {}
+export class MailService extends BaseService {
+	constructor(protected http: Http) {
+		super(http);
+	}
 
 	private mailUrl = "/mail/";
 
@@ -18,18 +21,5 @@ export class MailService {
 		return(this.http.post(this.mailUrl, body, options)
 			.map(this.extractData)
 			.catch(this.handleError));
-	}
-
-	private extractData(response: Response) {
-		if(response.status < 200 || response.status >= 300) {
-			throw(new Error("Bad response status: " + response.status))
-		}
-		return(response.json());
-	}
-
-	private handleError(error:any) {
-		let message = error.message;
-		console.log(message);
-		return(Observable.throw(message));
 	}
 }
