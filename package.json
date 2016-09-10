@@ -16,14 +16,14 @@
 		"url": "https://github.com/dylan-mcdonald/deepdivedylan.git"
 	},
 	"devDependencies": {
-		"@angular/common": "2.0.0-rc.5",
-		"@angular/compiler": "2.0.0-rc.5",
-		"@angular/core": "2.0.0-rc.5",
-		"@angular/forms": "0.3.0",
-		"@angular/http": "2.0.0-rc.5",
-		"@angular/platform-browser": "2.0.0-rc.5",
-		"@angular/platform-browser-dynamic": "2.0.0-rc.5",
-		"@angular/router": "3.0.0-rc.1",
+		"@angular/common": "2.0.0-rc.6",
+		"@angular/compiler": "2.0.0-rc.6",
+		"@angular/core": "2.0.0-rc.6",
+		"@angular/forms": "2.0.0-rc.6",
+		"@angular/http": "2.0.0-rc.6",
+		"@angular/platform-browser": "2.0.0-rc.6",
+		"@angular/platform-browser-dynamic": "2.0.0-rc.6",
+		"@angular/router": "3.0.0-rc.2",
 		"angular2-template-loader": "^0.4.0",
 		"bootstrap-loader": "^1.0.10",
 		"bootstrap-sass": "^3.3.7",
@@ -41,7 +41,7 @@
 		"reflect-metadata": "0.1.2",
 		"resolve-url-loader": "^1.5.0",
 		"rimraf": "^2.5.2",
-		"rxjs": "5.0.0-beta.6",
+		"rxjs": "5.0.0-beta.11",
 		"sass-loader": "^4.0.0",
 		"style-loader": "0.13.1",
 		"ts-loader": "^0.8.1",
@@ -51,6 +51,6 @@
 		"webpack": "^1.13.0",
 		"webpack-dev-server": "^1.14.1",
 		"webpack-merge": "^0.14.0",
-		"zone.js": "0.6.12"
+		"zone.js": "0.6.19"
 	}
 }
