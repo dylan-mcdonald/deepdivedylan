@@ -11,5 +11,6 @@ import 'rxjs';
 
 // Other vendors for example jQuery, Lodash or Bootstrap
 // You can import js, ts, css, sass, ...
+import 'angular2-recaptcha';
 import 'bootstrap-loader';
 import 'font-awesome-webpack';
