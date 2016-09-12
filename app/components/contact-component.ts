@@ -11,8 +11,12 @@ export class ContactComponent {
 	constructor(private mailService: MailService) {}
 
 	alertClass: string = "";
-	mailMessage: MailMessage = new MailMessage("", "", "", "");
+	mailMessage: MailMessage = new MailMessage("", "", "", "", "");
 	mailResponse: MailResponse = null;
+
+	handleCorrectCaptcha(recaptchaResponse: string) {
+		this.mailMessage.recaptcha = recaptchaResponse;
+	}
 
 	sendMail(mailMessage: MailMessage) {
 		this.mailService.sendMail(mailMessage)
@@ -28,7 +32,7 @@ export class ContactComponent {
 		if(this.mailResponse.status !== 200) {
 			return("alert-danger");
 		} else {
-			this.mailMessage = new MailMessage("", "", "", "");
+			this.mailMessage = new MailMessage("", "", "", "", "");
 			return("alert-success");
 		}
 	}
