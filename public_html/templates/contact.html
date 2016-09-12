@@ -42,7 +42,7 @@
 			<textarea name="message" id="message" cols="30" rows="10" class="form-control" placeholder="What's on your mind?" [(ngModel)]="mailMessage.message"></textarea>
 		</div>
 		<div class="form-group">
-			<re-captcha site_key="6LcwvScTAAAAAPZjB2oNVPfjz8EO__NVedvtRJ0_" (captchaResponse)="handleCorrectCaptcha(recaptchaResponse);"></re-captcha>
+			<re-captcha site_key="6LcwvScTAAAAAPZjB2oNVPfjz8EO__NVedvtRJ0_" (captchaResponse)="handleCorrectCaptcha($event);"></re-captcha>
 		</div>
 		<div class="form-group">
 			<button type="submit" class="btn btn-lg btn-primary" [disabled]="!contactForm.form.valid"><i class="fa fa-lg fa-paper-plane-o" aria-hidden="true"></i> Send</button>
