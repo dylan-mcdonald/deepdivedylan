@@ -1,5 +1,6 @@
 {
 	"require": {
+		"google/recaptcha": "@stable",
 		"mailgun/mailgun-php": "@stable",
 		"php-http/guzzle6-adapter": "@stable"
 	}
