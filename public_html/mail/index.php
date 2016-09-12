@@ -16,6 +16,8 @@ $reply->status = 200;
 try {
 	//grab the mailgun configuration
 	$config = readConfig("/etc/apache2/encrypted-config/deepdivedylan.ini");
+	$mailgunConfig = json_decode($config["mailgun"]);
+	$recaptchaConfig = json_decode($config["recaptcha"]);
 
 	//determine which HTTP method was used
 	$method = array_key_exists("HTTP_X_HTTP_METHOD", $_SERVER) ? $_SERVER["HTTP_X_HTTP_METHOD"] : $_SERVER["REQUEST_METHOD"];
@@ -29,6 +31,17 @@ try {
 		verifyXsrf();
 		$requestContent = file_get_contents("php://input");
 		$requestObject = json_decode($requestContent);
+
+		// verify recaptcha
+		$recaptchaErrorMessage = "unable to send email: incorrect captcha";
+		if(empty($requestObject->recaptcha) === true) {
+			throw(new RuntimeException($recaptchaErrorMessage, 403));
+		}
+		$recaptcha = new \ReCaptcha\ReCaptcha($recaptchaConfig->secretKey);
+		$recaptchaResult = $recaptcha->verify($requestObject->recaptcha, $_SERVER["REMOTE_ADDR"]);
+		if($recaptchaResult->isSuccess() === false) {
+			throw(new RuntimeException($recaptchaErrorMessage, 403));
+		}
 
 		// sanitize inputs
 		$name = filter_var($requestObject->name, FILTER_SANITIZE_STRING, FILTER_FLAG_NO_ENCODE_QUOTES);
@@ -52,10 +65,10 @@ try {
 
 		// start the mailgun client
 		$client = new \Http\Adapter\Guzzle6\Client();
-		$mailgun = new \Mailgun\Mailgun($config["mailgunKey"], $client);
+		$mailgun = new \Mailgun\Mailgun($mailgunConfig->apiKey, $client);
 
 		// send the message
-		$result = $mailgun->sendMessage("deepdivedylan.com", [
+		$result = $mailgun->sendMessage($mailgunConfig->domain, [
 				"from" => "$name <$email>",
 				"to" => "dylan@deepdivedylan.com",
 				"subject" => $subject,
