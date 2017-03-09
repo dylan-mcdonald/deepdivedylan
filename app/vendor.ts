@@ -13,4 +13,4 @@ import 'rxjs';
 // You can import js, ts, css, sass, ...
 import 'angular2-recaptcha';
 import 'bootstrap-loader';
-import 'font-awesome-webpack';
+import 'font-awesome-webpack2';
