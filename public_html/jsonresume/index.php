@@ -6,7 +6,7 @@ class Dylan {
 	public $firstname = "Dylan";
 	public $familyname = "McDonald";
 	public $linkedin_id = "deepdivedylan";
-	public $github_id = "dylan-mcdonald";
+	public $github_id = "deepdivedylan";
 	public $twitter_id = "deepdivedylan";
 
 	public $bio_data = [
