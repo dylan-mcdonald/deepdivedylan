@@ -10,15 +10,15 @@ class Dylan {
 	public $twitter_id = "deepdivedylan";
 
 	public $bio_data = [
-		"email" => "dylan@deepdivedylan.com",
+		"email" => "dylan@deepdivedylan.io",
 		"phone" => "+1 505.715.3826",
-		"website" => "https://www.deepdivedylan.com/",
-		"stars" => ["Instructor", "Full Stack Developer", "Scrum Master", "Systems Administrator"],
+		"website" => "https://www.deepdivedylan.io",
+		"stars" => ["Instructor", "Full Stack Developer", "Certified Ethical Hacker", "Scrum Master", "Systems Administrator"],
 		"summary" => ["points" => [
 			"Passionate and dedicated instructor who pushes his students to the limits of their experience",
-			"Experienced software developer in Java EE, PHP, HTML5, CSS, Bootstrap, and C++",
+			"Experienced software developer in Angular, PHP, HTML5, CSS, Bootstrap, and C++",
 			"Agile project manager who demands a high quality of coding through rigorous unit testing",
-			"Seasoned systems administrator who makes no compromises on enhancing security"
+			"Seasoned systems administrator and Certified Ethical Hacker who makes no compromises on enhancing security"
 		]],
 	];
 
@@ -26,6 +26,7 @@ class Dylan {
 		[
 			"type" => "Programming Languages",
 			"items" => [
+				["name" => "Angular"],
 				["name" => "C"],
 				["name" => "C++"],
 				["name" => "CSS3"],
@@ -40,6 +41,7 @@ class Dylan {
 		[
 			"type" => "Frameworks",
 			"items" => [
+				["name" => "Angular"],
 				["name" => "Bootstrap"],
 				["name" => "Java EE"],
 				["name" => "Java Persistence API (JPA)"],
@@ -53,12 +55,13 @@ class Dylan {
 		[
 			"type" => "Tools",
 			"items" => [
-				["name" => "Eclipse"],
 				["name" => "gcc"],
 				["name" => "git"],
 				["name" => "IntelliJ IDEA"],
+				["name" => "npm"],
 				["name" => "PhpStorm"],
-				["name" => "Qt"]
+				["name" => "Qt"],
+				["name" => "webpack"]
 			]
 		],
 		[
@@ -84,6 +87,47 @@ class Dylan {
 			]
 		]
 	]];
+
+	public $github_projects = [
+		"details" => [
+			[
+				"project_name" => "ussbernerslee/angularattack2018-knightsofnode",
+				"tagline" => "Angular Attack 2018",
+				"description" => [
+					"48 hour Angular hackathon to write an Angular app from zero to 100",
+					"Wrote a game engine and graphics projected on to JavaScript canvas",
+					"Collaboratively built the app in a high pressure timed contest"
+				]
+			],
+			[
+				"project_name" => "deepdivedylan/data-design",
+				"tagline" => "Cutting Edge Curriculum Development",
+				"description" => [
+					"Example full stack application used as sample code for students",
+					"Concepts are tested here before integrated into final curriculum",
+					"Concepts such as Angular, PHP, security, and mySQL"
+				]
+			],
+			[
+				"project_name" => "deepdivedylan/misquote-of-the-day",
+				"tagline" => "Misquote of the Day",
+				"description" => [
+					"Example full stack application for instructional purposes",
+					"Full stack Angular application that allows modification of data",
+					"Future development will record updates on the Ethereum blockchain"
+				]
+			],
+			[
+				"project_name" => "ussbernerslee/angularattack2017-twitter-ipsum",
+				"tagline" => "Angular Attack 2017",
+				"description" => [
+					"48 hour Angular hackathon to write an Angular app from zero to 100",
+					"Wrote an app that will harvest a given user's twitter and generates filler",
+					"Collaboratively built the app in a high pressure timed contest"
+				]
+			]
+		]
+	];
 
 	public $education = [
 		"show_gpa" => true,
@@ -128,12 +172,14 @@ class Dylan {
 			"to" => "Present",
 			"details" => [
 				"Continued the program based on HTML5, CSS3, JavaScript, jQuery, mySQL, and PHP 5 originally started at Deep Dive Coders. Restructured and reformatted the curriculum to be more integrated, challenging, and exciting.",
-				"Collaborated with a co-instructor on the presentation and content of the curriculum. Stronger emphasis was placed on object oriented PHP, agile methodologies, and unit testing.",
+				"Added Angular, npm, and webpack to the existing curriculum to provide a full experience with JavaScript frameworks and kept the curriculum constantly updated with the latest version of Angular.",
+				"Collaborated with a co-instructor on the presentation and content of the curriculum. Stronger emphasis was placed on object oriented PHP, agile methodologies, and unit testing using PHPUnit.",
 				"Taught and presented the evolving program while periodically evaluating student progress through online interactive activities, group projects, and tests.",
 				"Evaluated, tested, and deployed a new toolset for the program. Wrote documentation for the students' individual setup of the toolset.",
 				"Continuously collaborated with outside departments for the improvement of the program and its daily operations."
 			],
 			"technology_used" => ["tools" => [
+				["name" => "Angular"],
 				["name" => "Bootstrap"],
 				["name" => "CSS3"],
 				["name" => "Curriculum Development"],
@@ -142,10 +188,12 @@ class Dylan {
 				["name" => "JavaScript"],
 				["name" => "jQuery"],
 				["name" => "mySQL"],
+				["name" => "npm"],
 				["name" => "PHP"],
+				["name" => "PHPUnit"],
 				["name" => "PhpStorm"],
-				["name" => "SimpleTest"],
-				["name" => "Ubuntu Linux"]
+				["name" => "Ubuntu Linux"],
+				["name" => "webpack"]
 			]]
 		],
 		[
@@ -404,6 +452,6 @@ class Dylan {
 	];
 }
 
-header("Content-type: text/json");
+header("Content-type: application/json");
 $dylan = new Dylan();
 echo json_encode($dylan);
