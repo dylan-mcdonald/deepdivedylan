@@ -1,7 +1,7 @@
 import {Component} from "@angular/core";
 
 @Component({
-	templateUrl: "./templates/coding.html"
+	template: require("./coding.component.html")
 })
 
 export class CodingComponent {}
