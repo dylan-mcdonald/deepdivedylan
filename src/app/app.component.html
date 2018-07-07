@@ -1,25 +1,21 @@
 <div class="sfooter">
 	<div class="sfooter-content">
 		<header id="top">
-			<nav class="navbar navbar-fixed-top">
-				<div class="container">
-					<div class="navbar-header">
-						<button type="button" class="navbar-toggle collapsed" aria-expanded="false" (click)="toggleCollapse();">
-							<span class="sr-only">Main Menu</span>
-							<i class="fa fa-bars fa-lg"></i>
-						</button>
-						<a class="navbar-brand" routerLink="/">Deep Dive Dylan</a>
-					</div>
-					<div class="navbar-collapse" [ngClass]="{collapse: navCollapse}">
-						<ul class="nav navbar-nav navbar-right" (click)="toggleCollapse();">
-							<li><a routerLink="/"><i class="fa fa-home fa-lg"></i></a></li>
-							<li><a routerLink="/advocacy">Advocacy</a></li>
-							<li><a routerLink="/teaching">Teaching</a></li>
-							<li><a routerLink="/coding">Coding</a></li>
-							<li><a routerLink="/contact">Contact</a></li>
-							<li><a routerLink="/resume">Resume</a></li>
-						</ul>
-					</div>
+			<nav class="navbar navbar-fixed-top navbar-expand-lg">
+				<a class="navbar-brand" routerLink="/">Deep Dive Dylan</a>
+				<button type="button" class="navbar-toggler" aria-expanded="false" (click)="toggleCollapse();">
+					<span class="sr-only">Main Menu</span>
+					<i class="fas fa-bars"></i>
+				</button>
+				<div class="navbar-collapse" [class.collapse]="navCollapse">
+					<ul class="nav" (click)="toggleCollapse();">
+						<li class="nav-item"><a class="nav-link" routerLink="/"><i class="fa fa-home fa-lg"></i></a></li>
+						<li class="nav-item"><a class="nav-link" routerLink="/advocacy">Advocacy</a></li>
+						<li class="nav-item"><a class="nav-link" routerLink="/teaching">Teaching</a></li>
+						<li class="nav-item"><a class="nav-link" routerLink="/coding">Coding</a></li>
+						<li class="nav-item"><a class="nav-link" routerLink="/contact">Contact</a></li>
+						<li class="nav-item"><a class="nav-link" routerLink="/resume">Resume</a></li>
+					</ul>
 				</div>
 			</nav>
 		</header>
@@ -29,7 +25,8 @@
 	</div>
 	<footer class="footer">
 		<div class="container">
-			&copy; 2017 Dylan McDonald. Released under the terms of the <a href="https://www.apache.org/licenses/LICENSE-2.0">Apache 2.0 license</a>.
+			&copy; 2018 Dylan McDonald. Released under the terms of the <a
+			href="https://www.apache.org/licenses/LICENSE-2.0">Apache 2.0 license</a>.
 		</div>
 	</footer>
 </div>
