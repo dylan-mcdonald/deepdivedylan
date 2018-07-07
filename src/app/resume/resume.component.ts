@@ -17,9 +17,7 @@ export class ResumeComponent implements OnInit {
 
 	getResumeJson() {
 		this.resumeService.getResumeJson()
-			.subscribe(
-				resumeData => this.resumeData = resumeData
-			);
+			.subscribe(resumeData => this.resumeData = resumeData);
 	}
 
 	formatPhone(phone: string) {
