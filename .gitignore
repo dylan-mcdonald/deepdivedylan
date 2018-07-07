@@ -7,6 +7,6 @@
 /app/**/*.js
 /app/**/*.js.map
 /public_html/dist
-/public_html/index.php
+/public_html/index.html
 /public_html/google*.html
 /npm-debug.log
