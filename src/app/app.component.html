@@ -7,16 +7,14 @@
 					<span class="sr-only">Main Menu</span>
 					<i class="fas fa-bars"></i>
 				</button>
-				<div class="navbar-collapse" [class.collapse]="navCollapse">
-					<ul class="nav" (click)="toggleCollapse();">
-						<li class="nav-item"><a class="nav-link" routerLink="/"><i class="fa fa-home fa-lg"></i></a></li>
-						<li class="nav-item"><a class="nav-link" routerLink="/advocacy">Advocacy</a></li>
-						<li class="nav-item"><a class="nav-link" routerLink="/teaching">Teaching</a></li>
-						<li class="nav-item"><a class="nav-link" routerLink="/coding">Coding</a></li>
-						<li class="nav-item"><a class="nav-link" routerLink="/contact">Contact</a></li>
-						<li class="nav-item"><a class="nav-link" routerLink="/resume">Resume</a></li>
-					</ul>
-				</div>
+				<ul class="nav navbar-collapse justify-content-end" [class.collapse]="navCollapse" (click)="toggleCollapse();">
+					<li class="nav-item"><a class="nav-link" routerLink="/"><i class="fa fa-home fa-lg"></i></a></li>
+					<li class="nav-item"><a class="nav-link" routerLink="/advocacy">Advocacy</a></li>
+					<li class="nav-item"><a class="nav-link" routerLink="/teaching">Teaching</a></li>
+					<li class="nav-item"><a class="nav-link" routerLink="/coding">Coding</a></li>
+					<li class="nav-item"><a class="nav-link" routerLink="/contact">Contact</a></li>
+					<li class="nav-item"><a class="nav-link" routerLink="/resume">Resume</a></li>
+				</ul>
 			</nav>
 		</header>
 		<main class="container">
