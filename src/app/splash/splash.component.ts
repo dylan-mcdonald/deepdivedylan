@@ -1,7 +1,7 @@
 import {Component} from "@angular/core";
 
 @Component({
-	templateUrl: "./templates/splash.html"
+	template: require("./splash.component.html")
 })
 
 export class SplashComponent {}
