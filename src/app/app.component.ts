@@ -1,8 +1,8 @@
 import {Component} from "@angular/core";
 
 @Component({
-	selector: 'deepdivedylan-app',
-	templateUrl: './templates/deepdivedylan-app.html'
+	selector: "deepdivedylan-app",
+	template: require("./app.component.html")
 })
 
 export class AppComponent {
