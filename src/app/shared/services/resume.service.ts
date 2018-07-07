@@ -7,7 +7,7 @@ import {Resume} from "../classes/resume";
 export class ResumeService {
 	constructor(protected http: HttpClient) {}
 
-	private resumeUrl = "/api/jsonresume/";
+	private resumeUrl = "api/jsonresume/";
 
 	getResumeJson() : Observable<Resume> {
 		return(this.http.get<Resume>(this.resumeUrl));

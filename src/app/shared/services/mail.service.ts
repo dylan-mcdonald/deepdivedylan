@@ -8,7 +8,7 @@ import {MailResponse} from "../classes/mail.response";
 export class MailService {
 	constructor(protected http: HttpClient) {}
 
-	private mailUrl = "/api/mail/";
+	private mailUrl = "api/mail/";
 
 	sendMail(mailMessage: MailMessage): Observable<MailResponse> {
 		return(this.http.post<MailResponse>(this.mailUrl, mailMessage));
