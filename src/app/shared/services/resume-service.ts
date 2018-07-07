@@ -1,20 +1,15 @@
 import {Injectable} from "@angular/core";
-import {Http} from "@angular/http";
-import {Observable} from "rxjs/Observable";
-import {BaseService} from "./base-service";
+import {HttpClient} from "@angular/common/http";
+import {Observable} from "rxjs";
 import {Resume} from "../classes/resume";
 
 @Injectable()
-export class ResumeService extends BaseService {
-	constructor(protected http: Http) {
-		super(http);
-	}
+export class ResumeService {
+	constructor(protected http: HttpClient) {}
 
-	private resumeUrl = "/jsonresume/";
+	private resumeUrl = "/api/jsonresume/";
 
 	getResumeJson() : Observable<Resume> {
-		return(this.http.get(this.resumeUrl)
-			.map(this.extractData)
-			.catch(this.handleError));
+		return(this.http.get<Resume>(this.resumeUrl));
 	}
 }
