@@ -1,9 +1,9 @@
 import {Component, OnInit} from "@angular/core";
-import {ResumeService} from "../services/resume-service";
-import {Resume} from "../classes/resume";
+import {Resume} from "../shared/classes/resume";
+import {ResumeService} from "../shared/services/resume.service";
 
 @Component({
-	templateUrl: "./templates/resume.html"
+	template: require("./resume.component.html")
 })
 
 export class ResumeComponent implements OnInit {
