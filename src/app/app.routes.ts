@@ -1,10 +1,10 @@
 import {RouterModule, Routes} from "@angular/router";
-import {AdvocacyComponent} from "./components/advocacy-component";
-import {ContactComponent} from "./components/contact-component";
-import {CodingComponent} from "./components/coding-component";
-import {ResumeComponent} from "./components/resume-component";
-import {SplashComponent} from "./components/splash-component";
-import {TeachingComponent} from "./components/teaching-component";
+import {AdvocacyComponent} from "./advocacy/advocacy.component";
+import {ContactComponent} from "./contact/contact.component";
+import {CodingComponent} from "./coding/coding.component";
+import {ResumeComponent} from "./resume/resume.component";
+import {SplashComponent} from "./splash/splash.component";
+import {TeachingComponent} from "./teaching/teaching.component";
 import {DeepDiveInterceptor} from "./shared/interceptors/deep.dive.interceptor";
 import {HTTP_INTERCEPTORS} from "@angular/common/http";
 
