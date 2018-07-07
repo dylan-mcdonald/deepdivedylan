@@ -1,10 +1,10 @@
 import {Component} from "@angular/core";
-import {MailMessage} from "../classes/mail-message";
-import {MailResponse} from "../classes/mail-response";
-import {MailService} from "../services/mail-service";
+import {MailMessage} from "../shared/classes/mail.message";
+import {MailResponse} from "../shared/classes/mail.response";
+import {MailService} from "../shared/services/mail.service";
 
 @Component({
-	templateUrl: "./templates/contact.html"
+	template: require("./contact.component.html")
 })
 
 export class ContactComponent {
