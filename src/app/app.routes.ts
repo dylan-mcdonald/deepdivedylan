@@ -5,6 +5,8 @@ import {CodingComponent} from "./components/coding-component";
 import {ResumeComponent} from "./components/resume-component";
 import {SplashComponent} from "./components/splash-component";
 import {TeachingComponent} from "./components/teaching-component";
+import {DeepDiveInterceptor} from "./shared/interceptors/deep.dive.interceptor";
+import {HTTP_INTERCEPTORS} from "@angular/common/http";
 
 
 export const allAppComponents = [AdvocacyComponent, ContactComponent, CodingComponent, SplashComponent, ResumeComponent, TeachingComponent];
@@ -18,6 +20,8 @@ export const routes: Routes = [
 	{path: "", component: SplashComponent}
 ];
 
-export const appRoutingProviders: any[] = [];
+export const appRoutingProviders: any[] = [
+	{provide: HTTP_INTERCEPTORS, useClass: DeepDiveInterceptor, multi: true}
+];
 
 export const routing = RouterModule.forRoot(routes);
