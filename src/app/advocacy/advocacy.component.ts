@@ -1,7 +1,7 @@
 import {Component} from "@angular/core";
 
 @Component({
-	templateUrl: "./templates/advocacy.html"
+	template: require("./advocacy.component.html")
 })
 
 export class AdvocacyComponent {}
