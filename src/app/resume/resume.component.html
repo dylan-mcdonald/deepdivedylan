@@ -10,23 +10,23 @@
 		</div>
 		<div class="col-md-3">
 			<ul class="fa-ul">
-				<li><i class="fa fa-li fa-envelope" aria-hidden="true"></i> <a [href]="'mailto:' + resumeData.bio_data.email">{{ resumeData.bio_data.email }}</a></li>
-				<li><i class="fa fa-li fa-globe" aria-hidden="true"></i> <a [href]="resumeData.bio_data.website">{{ resumeData.bio_data.website }}</a></li>
-				<li><i class="fa fa-li fa-phone" aria-hidden="true"></i> <a [href]="formatPhone(resumeData.bio_data.phone)">{{ resumeData.bio_data.phone }}</a></li>
-				<li><i class="fa fa-li fa-linkedin-square" aria-hidden="true"></i> <a [href]="'https://www.linkedin.com/in/' + resumeData.linkedin_id">/in/{{ resumeData.linkedin_id }}</a></li>
-				<li><i class="fa fa-li fa-twitter" aria-hidden="true"></i> <a [href]="'https://twitter.com/' + resumeData.twitter_id">{{ resumeData.linkedin_id }}</a></li>
-				<li><i class="fa fa-li fa-github" aria-hidden="true"></i> <a [href]="'https://github.com/' + resumeData.github_id">{{ resumeData.github_id }}</a></li>
+				<li><fa-icon [listItem]="true" [icon]="faEnvelope"></fa-icon><a [href]="'mailto:' + resumeData.bio_data.email">{{ resumeData.bio_data.email }}</a></li>
+				<li><fa-icon [listItem]="true" [icon]="faGlobe"></fa-icon><a [href]="resumeData.bio_data.website">{{ resumeData.bio_data.website }}</a></li>
+				<li><fa-icon [listItem]="true" [icon]="faPhone"></fa-icon><i class="fa fa-li fa-phone" aria-hidden="true"></i> <a [href]="formatPhone(resumeData.bio_data.phone)">{{ resumeData.bio_data.phone }}</a></li>
+				<li><fa-icon [listItem]="true" [icon]="faLinkedin"></fa-icon> <a [href]="'https://www.linkedin.com/in/' + resumeData.linkedin_id">/in/{{ resumeData.linkedin_id }}</a></li>
+				<li><fa-icon [listItem]="true" [icon]="faTwitter"></fa-icon> <a [href]="'https://twitter.com/' + resumeData.twitter_id">{{ resumeData.linkedin_id }}</a></li>
+				<li><fa-icon [listItem]="true" [icon]="faGithub"></fa-icon> <a [href]="'https://github.com/' + resumeData.github_id">{{ resumeData.github_id }}</a></li>
 			</ul>
 		</div>
 	</div>
 	<div class="row">
-		<h2><i class="fa fa-user" aria-hidden="false"></i> Qualifications Summary</h2>
+		<h2><fa-icon [icon]="faUser"></fa-icon> Qualifications Summary</h2>
 		<ul>
 			<li *ngFor="let qualification of resumeData.bio_data.summary.points">{{ qualification }}</li>
 		</ul>
 	</div>
 	<div class="row">
-		<h2><i class="fa fa-code" aria-hidden="true"></i> Technical Skills</h2>
+		<h2><fa-icon [icon]="faCode"></fa-icon> Technical Skills</h2>
 		<ul>
 			<li *ngFor="let detail of resumeData.skills.details">
 				{{ detail.type }}:
@@ -35,7 +35,7 @@
 		</ul>
 	</div>
 	<div class="row">
-		<h2><i class="fa fa-graduation-cap" aria-hidden="true"></i> Education</h2>
+		<h2><fa-icon [icon]="faGraduationCap"></fa-icon> Education</h2>
 		<table class="table table-hover table-responsive">
 			<tr><th>Degree</th><th>Major</th><th>Institution</th><th>Graduation Year</th></tr>
 			<tr *ngFor="let school of resumeData.education.schools">
@@ -47,7 +47,7 @@
 		</table>
 	</div>
 	<div class="row">
-		<h2><i class="fa fa-briefcase" aria-hidden="true"></i> Professional Experience</h2>
+		<h2><fa-icon [icon]="faBriefcase"></fa-icon> Professional Experience</h2>
 	</div>
 	<div *ngFor="let item of resumeData.experience.items" class="row">
 		<h4>
@@ -63,7 +63,7 @@
 		</ul>
 	</div>
 	<div class="row">
-		<h2><i class="fa fa-pencil-square-o" aria-hidden="true"></i> Research Experience</h2>
+		<h2><fa-icon [icon]="faBook"></fa-icon> Research Experience</h2>
 	</div>
 	<div *ngFor="let item of resumeData.research_experience.items" class="row">
 		<h4>
