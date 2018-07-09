@@ -30,7 +30,7 @@
 		<ul>
 			<li *ngFor="let detail of resumeData.skills.details">
 				{{ detail.type }}:
-				<span *ngFor="let item of detail.items"> <span class="label label-default">{{ item.name }}</span></span>
+				<span *ngFor="let item of detail.items"> <span class="badge badge-default">{{ item.name }}</span></span>
 			</li>
 		</ul>
 	</div>
@@ -58,7 +58,7 @@
 			<li *ngFor="let detail of item.details">{{ detail }}</li>
 			<li>
 				Technologies used:
-				<span *ngFor="let tool of item.technology_used.tools"> <span class="label label-default">{{ tool.name }}</span></span>
+				<span *ngFor="let tool of item.technology_used.tools"> <span class="badge badge-default">{{ tool.name }}</span></span>
 			</li>
 		</ul>
 	</div>
