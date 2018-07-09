@@ -42,6 +42,10 @@ main:before {
 	z-index: -1;
 }
 
+a {
+	color: #26517f;
+}
+
 section {
 	padding: 25px 0;
 }
