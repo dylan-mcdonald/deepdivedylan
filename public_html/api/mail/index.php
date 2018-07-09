@@ -1,5 +1,4 @@
 <?php
-
 require_once(dirname(__DIR__, 2) . "/vendor/autoload.php");
 require_once(dirname(__DIR__) . "/lib/xsrf.php");
 require_once("/etc/apache2/encrypted-config/encrypted-config.php");
@@ -26,7 +25,7 @@ try {
 	if($method === "GET") {
 		//set XSRF cookie
 		setXsrfCookie();
-		header("Location: ..", true, 301);
+		header("Location: ../..", true, 301);
 	} else if($method === "POST") {
 		verifyXsrf();
 		$requestContent = file_get_contents("php://input");
