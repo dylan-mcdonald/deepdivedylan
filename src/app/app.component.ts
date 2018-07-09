@@ -1,5 +1,5 @@
 import {Component} from "@angular/core";
-import {faBars} from "@fortawesome/free-solid-svg-icons";
+import {faBars, faHome} from "@fortawesome/free-solid-svg-icons";
 
 @Component({
 	selector: "deepdivedylan-app",
@@ -8,6 +8,7 @@ import {faBars} from "@fortawesome/free-solid-svg-icons";
 
 export class AppComponent {
 	faBars = faBars;
+	faHome = faHome;
 	navCollapse = true;
 
 	toggleCollapse() {
