@@ -31,6 +31,7 @@
 	},
 	"devDependencies": {
 		"@fortawesome/fontawesome-svg-core": "^1.2.0",
+		"@fortawesome/free-brands-svg-icons": "^5.1.0",
 		"@fortawesome/free-solid-svg-icons": "^5.1.0",
 		"@fortawesome/angular-fontawesome": "^0.1.1",
 		"@types/node": "^10.5.2",
