@@ -5,7 +5,7 @@
 				<a class="navbar-brand" routerLink="/">Deep Dive Dylan</a>
 				<button type="button" class="navbar-toggler" aria-expanded="false" (click)="toggleCollapse();">
 					<span class="sr-only">Main Menu</span>
-					<i class="fas fa-bars"></i>
+					<fa-icon [icon]="faBars"></fa-icon>
 				</button>
 				<ul class="nav navbar-collapse justify-content-end" [class.collapse]="navCollapse" (click)="toggleCollapse();">
 					<li class="nav-item"><a class="nav-link" routerLink="/"><i class="fa fa-home fa-lg"></i></a></li>
