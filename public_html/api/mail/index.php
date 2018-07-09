@@ -1,6 +1,6 @@
 <?php
-require_once(dirname(__DIR__, 2) . "/vendor/autoload.php");
-require_once(dirname(__DIR__) . "/lib/xsrf.php");
+require_once(dirname(__DIR__, 3) . "/vendor/autoload.php");
+require_once(dirname(__DIR__, 3) . "/php/lib/xsrf.php");
 require_once("/etc/apache2/encrypted-config/encrypted-config.php");
 
 //verify the session, start if not active
