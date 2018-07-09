@@ -8,6 +8,7 @@ import {AppComponent} from "./app.component";
 import {allAppComponents, appRoutingProviders, routing} from "./app.routes";
 import {MailService} from "./shared/services/mail.service";
 import {ResumeService} from "./shared/services/resume.service";
+import {SessionService} from "./shared/services/session.service";
 
 const moduleDeclarations = [AppComponent];
 
@@ -15,6 +16,6 @@ const moduleDeclarations = [AppComponent];
 	imports:      [BrowserModule, FormsModule, HttpClientModule, FontAwesomeModule, ReCaptchaModule, routing],
 	declarations: [...moduleDeclarations, ...allAppComponents],
 	bootstrap:    [AppComponent],
-	providers:    [appRoutingProviders, MailService, ResumeService]
+	providers:    [appRoutingProviders, MailService, ResumeService, SessionService]
 })
 export class AppModule {}
