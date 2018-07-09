@@ -4,8 +4,8 @@
 		<div class="form-group">
 			<label for="name">Name</label>
 			<div class="input-group">
-				<div class="input-group-addon">
-					<i class="fa fa-user" aria-hidden="true"></i>
+				<div class="input-group-prepend">
+					<span class="input-group-text"><fa-icon [icon]="faUser"></fa-icon></span>
 				</div>
 				<input type="text" class="form-control" id="name" name="name" placeholder="Whom shall I say is calling?" required [(ngModel)]="mailMessage.name" #name="ngModel">
 			</div>
@@ -16,8 +16,8 @@
 		<div class="form-group">
 			<label for="email">Email</label>
 			<div class="input-group">
-				<div class="input-group-addon">
-					<i class="fa fa-envelope" aria-hidden="true"></i>
+				<div class="input-group-prepend">
+					<span class="input-group-text"><fa-icon [icon]="faEnvelope"></fa-icon></span>
 				</div>
 				<input type="email" class="form-control" id="email" name="email" placeholder="How may I reach you?" required [(ngModel)]="mailMessage.email" #email="ngModel">
 			</div>
@@ -28,8 +28,8 @@
 		<div class="form-group">
 			<label for="subject">Subject</label>
 			<div class="input-group">
-				<div class="input-group-addon">
-					<i class="fa fa-pencil" aria-hidden="true"></i>
+				<div class="input-group-prepend">
+					<span class="input-group-text"><fa-icon [icon]="faPencilAlt"></fa-icon></span>
 				</div>
 				<input type="text" class="form-control" id="subject" name="subject" placeholder="What's this about?" required [(ngModel)]="mailMessage.subject" #subject="ngModel">
 			</div>
@@ -45,7 +45,7 @@
 			<re-captcha site_key="6LcwvScTAAAAAPZjB2oNVPfjz8EO__NVedvtRJ0_" (captchaResponse)="handleCorrectCaptcha($event);"></re-captcha>
 		</div>
 		<div class="form-group">
-			<button type="submit" class="btn btn-lg btn-primary" [disabled]="!contactForm.form.valid"><i class="fa fa-lg fa-paper-plane-o" aria-hidden="true"></i> Send</button>
+			<button type="submit" class="btn btn-lg btn-primary" [disabled]="!contactForm.form.valid"><fa-icon [icon]="faPaperPlane"></fa-icon> Send</button>
 			<button type="reset" class="btn btn-lg btn-default">Clear</button>
 		</div>
 	</form>
