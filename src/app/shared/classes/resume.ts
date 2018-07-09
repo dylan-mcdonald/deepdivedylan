@@ -7,6 +7,7 @@ export class Resume {
 		public github_id: string,
 		public bio_data: any,
 		public skills: any,
+		public github_projects: any,
 		public education: any,
 		public experience: any,
 		public research_experience: any) {}

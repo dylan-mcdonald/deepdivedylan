@@ -35,6 +35,24 @@
 		</ul>
 	</div>
 	<div class="row">
+		<h2><fa-icon [icon]="faCodeBranch"></fa-icon> GitHub Projects</h2>
+	</div>
+	<div *ngFor="let project of resumeData.github_projects.details">
+		<div class="row">
+			<div class="col-md-8">
+				<h4><a [href]="'https://github.com/' +  project.project_name">{{ project.project_name }}</a></h4>
+			</div>
+			<div class="col-md-4">
+				<p><em>{{ project.tagline }}</em></p>
+			</div>
+		</div>
+		<div class="row">
+			<ul>
+				<li *ngFor="let item of project.description">{{ item }}</li>
+			</ul>
+		</div>
+	</div>
+	<div class="row">
 		<h2><fa-icon [icon]="faGraduationCap"></fa-icon> Education</h2>
 		<table class="table table-hover table-responsive">
 			<tr><th>Degree</th><th>Major</th><th>Institution</th><th>Graduation Year</th></tr>
