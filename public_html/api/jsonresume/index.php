@@ -15,8 +15,8 @@ class Dylan {
 		"website" => "https://www.deepdivedylan.io",
 		"stars" => ["Instructor", "Full Stack Developer", "Certified Ethical Hacker", "Scrum Master", "Systems Administrator"],
 		"summary" => ["points" => [
-			"Passionate and dedicated instructor who pushes his students to the limits of their experience",
-			"Experienced software developer in Angular, PHP, HTML5, CSS, Bootstrap, and C++",
+			"Passionate and dedicated developer and mentor who pushes his junior developers to the limits of their experience",
+			"Experienced software developer in Angular, PHP, HTML5, CSS, Bootstrap, JavaScript, Java, and REST",
 			"Agile project manager who demands a high quality of coding through rigorous unit testing",
 			"Seasoned systems administrator and Certified Ethical Hacker who makes no compromises on enhancing security"
 		]],
@@ -35,7 +35,8 @@ class Dylan {
 				["name" => "JavaScript"],
 				["name" => "LaTeX"],
 				["name" => "Perl"],
-				["name" => "PHP"]
+				["name" => "PHP"],
+				["name" => "REST"]
 			]
 		],
 		[
@@ -165,52 +166,26 @@ class Dylan {
 
 	public $experience = ["items" => [
 		[
-			"title" => "Instructor",
-			"organisation" => "Central New Mexico Community College",
+			"title" => "Lead Developer/Scrum Master/Bootcamp Instructor",
+			"organisation" => "Deep Dive Coding",
 			"location" => "Albuquerque, NM",
-			"from" => "August 2014",
+			"from" => "October 2013",
 			"to" => "Present",
 			"details" => [
-				"Continued the program based on HTML5, CSS3, JavaScript, jQuery, mySQL, and PHP 5 originally started at Deep Dive Coders. Restructured and reformatted the curriculum to be more integrated, challenging, and exciting.",
-				"Added Angular, npm, and webpack to the existing curriculum to provide a full experience with JavaScript frameworks and kept the curriculum constantly updated with the latest version of Angular.",
-				"Collaborated with a co-instructor on the presentation and content of the curriculum. Stronger emphasis was placed on object oriented PHP, agile methodologies, and unit testing using PHPUnit.",
-				"Taught and presented the evolving program while periodically evaluating student progress through online interactive activities, group projects, and tests.",
-				"Evaluated, tested, and deployed a new toolset for the program. Wrote documentation for the students' individual setup of the toolset.",
-				"Continuously collaborated with outside departments for the improvement of the program and its daily operations."
+				"Responsible for creating, iteratively improving, and updating a full curriculum based on HTML5, CSS3, JavaScript, jQuery, mySQL, and PHP 5 and, later, PHP 7. Strong emphasis was placed on agile development methods, object oriented design patterns, cyber-security, and RESTful APIs. Added Angular, npm, and webpack to the existing curriculum to provide a full experience with JavaScript frameworks and kept the curriculum constantly updated with the latest version of Angular.",
+				"Created a full stack learning management system (LMS) to manage all aspects of the program. Front-facing technical material was developed in addition to backend tools for support staff to employ in the management and execution of the program.",
+				"Continuously researched current versions and industry trends for consideration into the program. Lead a team that coded, evaluated, and collaboratively decided on which new elements to include.",
+				"Introduced and strictly enforced good security practices in the development of security-minded software. Security practices also included offensive security in attacking sites in capture the flag scenarios with flags such as SQL Injection and XSS.",
+				"Lead several full stack projects simultaneously using agile methods. Responsibilities, feedback, and sprints were given using agile using scrum and agile methodologies. Signed off on all database designs and UX plans before coding commenced. Approximate total projects led: 50.",
+				"Lead and facilitated the curriculum to students from varied backgrounds and technical skill levels. Continuously evaluated the students as junior developers and provided feedback using agile methods.",
+				"Created a fully agile work environment from scratch using a combination of kanban and scrum methodologies. Used this method both externally with bootcamp attendees and internally with bootcamp support staff to manage all aspects of coding and day-to-day operations.",
+				"Continuously assisted students in the classroom and held office hours for students requiring review and reinforcement of the concepts in the curriculum. Taught and presented the evolving program while periodically evaluating student progress through online interactive activities, group projects, and tests.",
+				"Planned and deployed a fully functional dual stack IPv4/IPv6 network and developed an interactive lesson on the impacts of IPv6 on web development.",
+				"Evaluated, tested, and deployed a new toolset for the program. Deployed the entire program using Apache, mySQL, PHP, and Ubuntu Server. Integrated the server as member of an Active Directory domain. Explored future generalization using Docker.",
+				"Continuously collaborated with outside departments for the improvement of the program and its daily operations. Helped train senior developers in other languages to run similar bootcamp programs."
 			],
 			"technology_used" => ["tools" => [
 				["name" => "Angular"],
-				["name" => "Bootstrap"],
-				["name" => "CSS3"],
-				["name" => "Curriculum Development"],
-				["name" => "git"],
-				["name" => "HTML5"],
-				["name" => "JavaScript"],
-				["name" => "jQuery"],
-				["name" => "mySQL"],
-				["name" => "npm"],
-				["name" => "PHP"],
-				["name" => "PHPUnit"],
-				["name" => "PhpStorm"],
-				["name" => "Ubuntu Linux"],
-				["name" => "webpack"]
-			]]
-		],
-		[
-			"title" => "Instructor",
-			"organisation" => "Deep Dive Coders",
-			"location" => "Albuquerque, NM",
-			"from" => "October 2013",
-			"to" => "August 2014",
-			"details" => [
-				"Responsible for revamping, iteratively improving, and updating a full curriculum based on HTML5, CSS3, JavaScript, jQuery, mySQL, and PHP 5. Strong emphasis was placed on agile development methods, object oriented design patterns, and cyber-security.",
-				"Designed and wrote assignments and other activities to keep students engaged in and learning the curriculum. This includes designing a comprehensive, monolithic final project that covered all topics covered in the curriculum.",
-				"Taught and presented the curriculum to students from varied backgrounds. Continuously evaluated the students and kept the entire class at the same point.",
-				"Continuously assisted students in the classroom and held office hours for students requiring review and reinforcement of the concepts in the curriculum.",
-				"Supported students and alumni in developing professional profiles and resumes to facilitate a successful job search in information technology.",
-				"Planned and deployed a fully functional dual stack IPv4/IPv6 network and developed an interactive lesson on the impacts of IPv6 on web development."
-			],
-			"technology_used" => ["tools" => [
 				["name" => "Bootstrap"],
 				["name" => "CSS3"],
 				["name" => "Curriculum Development"],
@@ -220,9 +195,12 @@ class Dylan {
 				["name" => "JavaScript"],
 				["name" => "jQuery"],
 				["name" => "mySQL"],
+				["name" => "npm"],
 				["name" => "PHP"],
-				["name" => "SimpleTest"],
-				["name" => "Ubuntu Linux"]
+				["name" => "PHPUnit"],
+				["name" => "PhpStorm"],
+				["name" => "Ubuntu Linux"],
+				["name" => "webpack"]
 			]]
 		],
 		[
