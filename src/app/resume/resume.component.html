@@ -4,7 +4,7 @@
 			<h1>{{ resumeData.firstname }} {{ resumeData.familyname }}</h1>
 			<p>
 				<span *ngFor="let star of resumeData.bio_data.stars; let last = last">
-					{{ star }} <i *ngIf="last === false" class="fa fa-star" aria-hidden="true"></i>
+					{{ star }} <fa-icon *ngIf="last === false" [icon]="faStar"></fa-icon>
 				</span>
 			</p>
 		</div>
