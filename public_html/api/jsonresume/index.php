@@ -266,7 +266,7 @@ class Dylan {
 			"organisation" => "Missouri University of Science and Technology",
 			"location" => "Rolla, MO",
 			"from" => "January 2008",
-			"to" => "May 2008",
+			"to" => "May 2011",
 			"details" => [
 				"Supervised several undergraduate students while researching new algorithms in wireless sensor networks (WSNs).",
 				"Developed, designed, and proved an algorithm that detected outliers in wireless sensor networks using an enhanced communication method and simulated annealing to self-organize the network.",
