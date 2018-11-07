@@ -18,6 +18,7 @@ class Dylan {
 			"Passionate and dedicated developer and mentor who pushes his junior developers to the limits of their experience",
 			"Experienced software developer in Angular, PHP, HTML5, CSS, Bootstrap, JavaScript, Java, and REST",
 			"Agile project manager who demands a high quality of coding through rigorous unit testing",
+			"Community leader who has lead the Angular Meetup for Albuquerque, New Mexico for several years",
 			"Seasoned systems administrator and Certified Ethical Hacker who makes no compromises on enhancing security"
 		]],
 	];
@@ -99,7 +100,7 @@ class Dylan {
 				"description" => [
 					"48 hour Angular hackathon to write an Angular app from zero to 100",
 					"Wrote a game engine and graphics projected on to JavaScript canvas",
-					"Collaboratively built the app in a high pressure timed contest"
+					"Game has three difficulty levels and two types of sprites to defeat"
 				]
 			],
 			[
@@ -126,7 +127,7 @@ class Dylan {
 				"description" => [
 					"48 hour Angular hackathon to write an Angular app from zero to 100",
 					"Wrote an app that will harvest a given user's twitter and generates filler",
-					"Collaboratively built the app in a high pressure timed contest"
+					"Stored and organized randomized twitter fueled filler using Laravel"
 				]
 			]
 		]
@@ -177,6 +178,7 @@ class Dylan {
 				"Responsible for creating, iteratively improving, and updating a full curriculum based on HTML5, CSS3, JavaScript, jQuery, mySQL, and PHP 5 and, later, PHP 7. Strong emphasis was placed on agile development methods, object oriented design patterns, cyber-security, and RESTful APIs. Added Angular, npm, and webpack to the existing curriculum to provide a full experience with JavaScript frameworks and kept the curriculum constantly updated with the latest version of Angular.",
 				"Created a full stack learning management system (LMS) to manage all aspects of the program. Front-facing technical material was developed in addition to backend tools for support staff to employ in the management and execution of the program.",
 				"Continuously researched current versions and industry trends for consideration into the program. Lead a team that coded, evaluated, and collaboratively decided on which new elements to include.",
+				"Modeled the entire object oriented curriculum after PHP Laravel and had projects create a clone of Laravel/Symfony's Object Relational Mapping (ORM) components.",
 				"Introduced and strictly enforced good security practices in the development of security-minded software. Security practices also included offensive security in attacking sites in capture the flag scenarios with flags such as SQL Injection and XSS.",
 				"Earned Certified Ethical Hacker (CEH) and Certified Ethical Instructor (CEI) from the EC Council.",
 				"Developed lessons on network surveillance and attacks using nmap and metasploit. This included a deep discussion on social engineering on how to persuade victims to make themselves vulnerable.",
