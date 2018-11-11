@@ -1,7 +1,6 @@
 <?php
 require_once(dirname(__DIR__, 3) . "/vendor/autoload.php");
 require_once(dirname(__DIR__, 3) . "/php/lib/xsrf.php");
-require_once("/etc/apache2/encrypted-config/encrypted-config.php");
 
 //verify the session, start if not active
 if(session_status() !== PHP_SESSION_ACTIVE) {
@@ -14,9 +13,8 @@ $reply->status = 200;
 
 try {
 	//grab the mailgun configuration
-	$config = readConfig("/etc/apache2/encrypted-config/deepdivedylan.ini");
-	$mailgunConfig = json_decode($config["mailgun"]);
-	$recaptchaConfig = json_decode($config["recaptcha"]);
+	$mailgunConfig = json_decode($_ENV["MAILGUN"]);
+	$recaptchaConfig = json_decode($_ENV["RECAPTCHA"]);
 
 	//determine which HTTP method was used
 	$method = array_key_exists("HTTP_X_HTTP_METHOD", $_SERVER) ? $_SERVER["HTTP_X_HTTP_METHOD"] : $_SERVER["REQUEST_METHOD"];
