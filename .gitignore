@@ -11,3 +11,4 @@
 /npm-debug.log
 /webpack/target.js
 .gitsecret/keys/random_seed
+.gitsecret/secrets/deepdivedylan.sh
