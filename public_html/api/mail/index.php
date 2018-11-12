@@ -67,7 +67,7 @@ try {
 		// send the message
 		$result = $mailgun->sendMessage($mailgunConfig->domain, [
 				"from" => "$name <$email>",
-				"to" => "dylan@deepdivedylan.com",
+				"to" => "dylan@deepdivedylan.io",
 				"subject" => $subject,
 				"text" => $message
 			]
