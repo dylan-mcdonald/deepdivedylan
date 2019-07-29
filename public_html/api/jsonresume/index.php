@@ -13,10 +13,12 @@ class Dylan {
 		"email" => "dylan@deepdivedylan.io",
 		"phone" => "+1 505.715.3826",
 		"website" => "https://www.deepdivedylan.io",
-		"stars" => ["Instructor", "Full Stack Developer", "Certified Ethical Hacker", "Scrum Master", "Systems Administrator"],
+		"stars" => ["Full Stack Developer", "Instructor", "Certified Ethical Hacker", "Scrum Master", "Systems Administrator"],
 		"summary" => ["points" => [
+			"Experienced software developer in Angular, PHP, HTML5, CSS, Bootstrap, JavaScript, Java, React, and REST",
+			"Strong believer in continuously learning new skills and constantly keeping his knowledge updated and relevant",
+			"Full stack developer with a passion for frontend/backend interactions",
 			"Passionate and dedicated developer and mentor who pushes his junior developers to the limits of their experience",
-			"Experienced software developer in Angular, PHP, HTML5, CSS, Bootstrap, JavaScript, Java, and REST",
 			"Agile project manager who demands a high quality of coding through rigorous unit testing",
 			"Community leader who has lead the Angular Meetup for Albuquerque, New Mexico for several years",
 			"Seasoned systems administrator and Certified Ethical Hacker who makes no compromises on enhancing security"
@@ -50,6 +52,7 @@ class Dylan {
 				["name" => "JavaServer Faces (JSF)"],
 				["name" => "jQuery"],
 				["name" => "Laravel"],
+				["name" => "React"],
 				["name" => "Qt"],
 				["name" => "Spring"]
 			]
@@ -81,6 +84,7 @@ class Dylan {
 			"type" => "Servers",
 			"items" => [
 				["name" => "Apache"],
+				["name" => "Docker"],
 				["name" => "Dovecot"],
 				["name" => "OpenSSH"],
 				["name" => "Postfix"],
@@ -94,6 +98,15 @@ class Dylan {
 
 	public $github_projects = [
 		"details" => [
+			[
+				"project_name" => "deepdivedylan/bootcamp-coders",
+				"tagline" => "Stable Curriculum Development",
+				"description" => [
+					"Complete and robust full stack curriculum for students",
+					"Includes Active Directory integrated tools for internal staff",
+					"Fully functional Learning Management System (LMS) for multiple topics"
+					]
+			],
 			[
 				"project_name" => "ussbernerslee/angularattack2018-knightsofnode",
 				"tagline" => "Angular Attack 2018",
@@ -169,13 +182,60 @@ class Dylan {
 
 	public $experience = ["items" => [
 		[
+			"title" => "Frontend Software Engineer",
+			"organisation" => "Intuit",
+			"location" => "San Diego, CA",
+			"from" => "December 2018",
+			"to" => "Present",
+			"details" => [
+				"Assigned to a team that was responsible for a highly publicized feature to one of our flagship products. Created React components for the frontend elements and enrolled in, integrated, and tested backend functionality using RESTful APIs. Met a very tight deadline to deliver a quality feature in a timely manner.",
+				"Developed and refactored React components to use the React Intl library in transitioning the product from a monolingual to a fully localized product supporting about a dozen languages.",
+				"Involved in a migration of a legacy Angular 1 code base to React. Carefully created React components that would have feature parity with deprecated Angular components.",
+				"In addition to migrating Angular code, was involved in creating new functionality in non deprecated aspects of the code base. Structured the code meticulously to make Angular and React as decoupled as possible to provide future compatibility for the eventual removal of Angular.",
+				"Led the team as the scrum master by organizing stand ups, sprint planning, and grooming. Instilled a pure agile approach by following agile processes more closely than the team had in the past.",
+				"Wrote unit tests in enzyme and jest. Also wrote end to end (E2E) tests in cucumber and web driver. Did not accept pull requests without sufficient coverage from jest or enzyme.",
+				"Worked with continuous integration/continuous deployment (CI/CD) pipeline using Jenkins."
+			],
+			"technology_used" => ["tools" => [
+				["name" => "Angular"],
+				["name" => "cucumber"],
+				["name" => "CSS"],
+				["name" => "HTML5"],
+				["name" => "JavaScript"],
+				["name" => "Jenkins"],
+				["name" => "npm"],
+				["name" => "React"],
+				["name" => "webdriver"],
+				["name" => "webpack"]
+			]]
+		],
+		[
+			"title" => "DevOps (Volunteer Position)",
+			"organisation" => "Vermilion Sea Institute",
+			"location" => "Tijuana, BC, México",
+			"from" => "October 2018",
+			"to" => "Present",
+			"details" => [
+				"Migrated a site from a legacy hosting plan to a Docker container using cloud hosting. Created a migration plan for site infrastructure and data.",
+				"Migrated entire organization from a legacy mail provider to G Suite. Orchestrated the migration plan with constant communication with end users."
+			],
+			"technology_used" => ["tools" => [
+				["name" => "DigitalOcean"],
+				["name" => "Docker"],
+				["name" => "DNS"],
+				["name" => "G Suite"],
+				["name" => "Ubuntu Server"],
+				["name" => "WordPress"]
+			]]
+		],
+		[
 			"title" => "Lead Developer/Scrum Master/Bootcamp Instructor",
 			"organisation" => "Deep Dive Coding",
 			"location" => "Albuquerque, NM",
 			"from" => "October 2013",
 			"to" => "September 2018",
 			"details" => [
-				"Responsible for creating, iteratively improving, and updating a full curriculum based on HTML5, CSS3, JavaScript, jQuery, mySQL, and PHP 5 and, later, PHP 7. Strong emphasis was placed on agile development methods, object oriented design patterns, cyber-security, and RESTful APIs. Added Angular, npm, and webpack to the existing curriculum to provide a full experience with JavaScript frameworks and kept the curriculum constantly updated with the latest version of Angular.",
+				"Responsible for creating, iteratively improving, and updating a full curriculum based on HTML5, CSS3, JavaScript, jQuery, mySQL, and PHP 5 and, later, PHP 7. Strong emphasis was placed on agile development methods, object oriented design patterns, cyber-security, and RESTful APIs. Added Angular, npm, and webpack to the curriculum to provide a full experience with JavaScript frameworks and kept the curriculum constantly updated with the latest version of Angular.",
 				"Created a full stack learning management system (LMS) to manage all aspects of the program. Front-facing technical material was developed in addition to backend tools for support staff to employ in the management and execution of the program.",
 				"Continuously researched current versions and industry trends for consideration into the program. Lead a team that coded, evaluated, and collaboratively decided on which new elements to include.",
 				"Modeled the entire object oriented curriculum after PHP Laravel and had projects create a clone of Laravel/Symfony's Object Relational Mapping (ORM) components.",
@@ -185,7 +245,7 @@ class Dylan {
 				"Lead several full stack projects simultaneously using agile methods. Responsibilities, feedback, and sprints were given using agile using scrum and agile methodologies. Signed off on all database designs and UX plans before coding commenced. Approximate total projects led: 50.",
 				"Lead and facilitated the curriculum to students from varied backgrounds and technical skill levels. Continuously evaluated the students as junior developers and provided feedback using agile methods.",
 				"Created a fully agile work environment from scratch using a combination of kanban and scrum methodologies. Used this method both externally with bootcamp attendees and internally with bootcamp support staff to manage all aspects of coding and day-to-day operations.",
-				"Continuously assisted students in the classroom and held office hours for students requiring review and reinforcement of the concepts in the curriculum. Taught and presented the evolving program while periodically evaluating student progress through online interactive activities, group projects, and tests.",
+				"Continuously assisted students in the classroom and held office hours for students requiring review and reinforcement of the concepts in the curriculum. Taught and presented the evolving program while evaluating student progress through online interactive activities, group projects, and tests.",
 				"Planned and deployed a fully functional dual stack IPv4/IPv6 network and developed an interactive lesson on the impacts of IPv6 on web development.",
 				"Evaluated, tested, and deployed a new toolset for the program. Deployed the entire program using Apache, mySQL, PHP, and Ubuntu Server. Integrated the server as member of an Active Directory domain. Explored future generalization using Docker.",
 				"Continuously collaborated with outside departments for the improvement of the program and its daily operations. Helped train senior developers in other languages to run similar bootcamp programs."
@@ -409,31 +469,6 @@ class Dylan {
 			]]
 		]
 	]];
-
-	public $research_experience = [
-		"items" => [
-			[
-				"title" => "Outlier Detection in Wireless Sensor Networks",
-				"organisation" => "Missouri University of Science and Technology",
-				"from" => "May 2008",
-				"to" => "May 2011",
-				"points" => [
-					"Detecting and reacting to outliers in wireless sensor networks",
-					"Maximized the chance of finding an optimal solution while minimizing the network traffic",
-					"data-agnostic framework applicable to non-Gaussian data sets"
-				]
-			],
-			[
-				"title" => "TutorWriter",
-				"organisation" => "California State University, San Marcos",
-				"from" => "January 2006",
-				"to" => "May 2006",
-				"points" => [
-					"Wrote a tool in Qt to create a user friendly tool to generate student lessons and quizzes"
-				]
-			]
-		]
-	];
 }
 
 header("Content-type: application/json");
