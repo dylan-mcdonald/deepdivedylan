@@ -1,5 +1,10 @@
 <section *ngIf="resumeData !== null">
 	<div class="row">
+		<div class="alert">
+			<h4><a href="/dylan-mcdonald-resume.pdf"><fa-icon [icon]="faFilePdf"></fa-icon> Download PDF Version of my Resume</a></h4>
+		</div>
+	</div>
+	<div class="row">
 		<div class="col-md-9">
 			<h1>{{ resumeData.firstname }} {{ resumeData.familyname }}</h1>
 			<p>
@@ -78,18 +83,6 @@
 				Technologies used:
 				<span *ngFor="let tool of item.technology_used.tools"> <span class="badge badge-default">{{ tool.name }}</span></span>
 			</li>
-		</ul>
-	</div>
-	<div class="row">
-		<h2><fa-icon [icon]="faBook"></fa-icon> Research Experience</h2>
-	</div>
-	<div *ngFor="let item of resumeData.research_experience.items" class="row">
-		<h4>
-			<em>{{ item.title }}</em>, {{ item.organisation }}
-			<span class="pull-right">{{ item.from }} - {{ item.to }}</span>
-		</h4>
-		<ul>
-			<li *ngFor="let point of item.points">{{ point }}</li>
 		</ul>
 	</div>
 </section>

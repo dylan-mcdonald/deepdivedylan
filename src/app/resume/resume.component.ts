@@ -1,7 +1,7 @@
 import {Component, OnInit} from "@angular/core";
 import {Resume} from "../shared/classes/resume";
 import {ResumeService} from "../shared/services/resume.service";
-import {faBook, faBriefcase, faCode, faCodeBranch, faEnvelope, faGlobe, faGraduationCap, faPhone, faStar, faUser} from "@fortawesome/free-solid-svg-icons";
+import {faBriefcase, faCode, faCodeBranch, faEnvelope, faFilePdf, faGlobe, faGraduationCap, faPhone, faStar, faUser} from "@fortawesome/free-solid-svg-icons";
 import {faGithub, faLinkedin, faTwitter} from "@fortawesome/free-brands-svg-icons";
 
 @Component({
@@ -10,11 +10,11 @@ import {faGithub, faLinkedin, faTwitter} from "@fortawesome/free-brands-svg-icon
 
 export class ResumeComponent implements OnInit {
 	// fontawesome icons on parade
-	faBook = faBook;
 	faBriefcase = faBriefcase;
 	faCode = faCode;
 	faCodeBranch = faCodeBranch;
 	faEnvelope = faEnvelope;
+	faFilePdf = faFilePdf;
 	faGithub = faGithub;
 	faGlobe = faGlobe;
 	faGraduationCap = faGraduationCap;
