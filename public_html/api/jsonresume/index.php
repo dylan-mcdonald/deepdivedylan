@@ -89,6 +89,7 @@ class Dylan {
 				["name" => "OpenSSH"],
 				["name" => "Postfix"],
 				["name" => "mySQL"],
+				["name" => "nginx"],
 				["name" => "SpamAssassin"],
 				["name" => "Tomcat"],
 				["name" => "Ubuntu Linux"]
@@ -147,7 +148,7 @@ class Dylan {
 	];
 
 	public $education = [
-		"show_gpa" => true,
+		"show_gpa" => false,
 		"schools" => [
 			[
 				"degree" => "PhD (pursued)",
@@ -192,7 +193,7 @@ class Dylan {
 				"Developed and refactored React components to use the React Intl library in transitioning the product from a monolingual to a fully localized product supporting about a dozen languages.",
 				"Involved in a migration of a legacy Angular 1 code base to React. Carefully created React components that would have feature parity with deprecated Angular components.",
 				"In addition to migrating Angular code, was involved in creating new functionality in non deprecated aspects of the code base. Structured the code meticulously to make Angular and React as decoupled as possible to provide future compatibility for the eventual removal of Angular.",
-				"Led the team as the scrum master by organizing stand ups, sprint planning, and grooming. Instilled a pure agile approach by following agile processes more closely than the team had in the past.",
+				"Customized and improved development configuration driven by multiple nginx sites controlled by an nginx reverse proxy.",
 				"Wrote unit tests in enzyme and jest. Also wrote end to end (E2E) tests in cucumber and web driver. Did not accept pull requests without sufficient coverage from jest or enzyme.",
 				"Worked with continuous integration/continuous deployment (CI/CD) pipeline using Jenkins."
 			],
@@ -203,6 +204,7 @@ class Dylan {
 				["name" => "HTML5"],
 				["name" => "JavaScript"],
 				["name" => "Jenkins"],
+				["name" => "nginx"],
 				["name" => "npm"],
 				["name" => "React"],
 				["name" => "webdriver"],
@@ -216,7 +218,7 @@ class Dylan {
 			"from" => "October 2018",
 			"to" => "Present",
 			"details" => [
-				"Migrated a site from a legacy hosting plan to a Docker container using cloud hosting. Created a migration plan for site infrastructure and data.",
+				"Migrated a site from a legacy hosting plan to a Docker container using nginx on DigitalOcean. Created a migration plan for site infrastructure and data.",
 				"Migrated entire organization from a legacy mail provider to G Suite. Orchestrated the migration plan with constant communication with end users."
 			],
 			"technology_used" => ["tools" => [
@@ -224,6 +226,7 @@ class Dylan {
 				["name" => "Docker"],
 				["name" => "DNS"],
 				["name" => "G Suite"],
+				["name" => "nginx"],
 				["name" => "Ubuntu Server"],
 				["name" => "WordPress"]
 			]]
@@ -252,6 +255,7 @@ class Dylan {
 			],
 			"technology_used" => ["tools" => [
 				["name" => "Angular"],
+				["name" => "Apache"],
 				["name" => "Bootstrap"],
 				["name" => "CSS3"],
 				["name" => "Curriculum Development"],
@@ -472,7 +476,7 @@ class Dylan {
 }
 
 header("Content-type: application/json");
-$reply = new stdClass();
-$reply->status = 200;
-$reply->data = new Dylan();
-echo json_encode($reply);
+//$reply = new stdClass();
+//$reply->status = 200;
+//$reply->data = new Dylan();
+echo json_encode(new Dylan());
