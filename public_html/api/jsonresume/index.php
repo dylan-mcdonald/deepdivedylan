@@ -476,7 +476,7 @@ class Dylan {
 }
 
 header("Content-type: application/json");
-//$reply = new stdClass();
-//$reply->status = 200;
-//$reply->data = new Dylan();
-echo json_encode(new Dylan());
+$reply = new stdClass();
+$reply->status = 200;
+$reply->data = new Dylan();
+echo json_encode($reply);
